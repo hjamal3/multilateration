@@ -12,20 +12,22 @@
 //roboty = randn()*30;
 //sigma = 0.2;
 //d = sqrt((x - robotx).*(x - robotx) + (y - roboty).*(y - roboty)) + randn(1,n)*sigma;
-
+// for i = 1:length(x)
+//    fprintf('%8.2f, %8.3f,%8.3f,\n',[x(i),y(i),d(i)]')   
+//end 
 const int kNumObservations = 10;
 // xi, yi, di
 const double data[] = {
-   23.98,  -69.036, -65.155,
-  119.21, -161.183,  -2.446,
- -194.88,  102.050,  86.172,
-   -7.08, -248.628,  58.117,
- -219.24, -231.928,   7.993,
-  -94.85,   41.149,  67.698,
-   49.23,  266.688,  63.080,
-  271.74,  282.731,  19.065,
-  205.30,  125.439, 119.767,
-    0.12,   85.773,  74.985
+  -86.49,   -0.685, 132.556,
+   -3.01,  153.263, 158.406,
+  -16.49,  -76.967, 101.143,
+   62.77,   37.138,  38.743,
+  109.33,  -22.558,  67.707,
+  110.93,  111.736, 126.991,
+  -86.37, -108.906, 173.270,
+    7.74,    3.256,  38.774,
+ -121.41,   55.253, 175.661,
+ -111.35,  110.061, 190.545
 };
 
 // clang-format on
@@ -52,8 +54,8 @@ struct PositionResidual {
 int main(int argc, char** argv) {
   google::InitGoogleLogging(argv[0]);
   // initial location
-  double x_robot = -20.73;
-  double y_robot = 13.48;
+  double x_robot = 0.0;
+  double y_robot = 0.0;
   const double x_robot_init = x_robot;
   const double y_robot_init = y_robot;
   Problem problem;
