@@ -12,4 +12,12 @@ See below for more on the multilateration problem:
 https://en.wikipedia.org/wiki/Multilateration
 
 Dependencies:
-Ceres - http://ceres-solver.org/index.html
+Ceres - http://ceres-solver.org/index.html  
+
+Instructions:
+git clone https://github.com/hjamal3/multilateration.git  
+cd multilateration  
+mkdir build  
+cmake ..  
+make  
+./multilateration  
