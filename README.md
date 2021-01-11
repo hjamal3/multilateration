@@ -14,7 +14,7 @@ https://en.wikipedia.org/wiki/Multilateration
 Dependencies:
 Ceres - http://ceres-solver.org/index.html  
 
-Instructions:
+Instructions:  
 git clone https://github.com/hjamal3/multilateration.git  
 cd multilateration  
 mkdir build  
