@@ -2,7 +2,8 @@
 
 Multilateration: the process of determining locations of points by measurement of distances from known points.
 
-This C++ sample uses a nonlinear least squares solver from Ceres to solve for the multilateration problem.
+This C++ sample uses a nonlinear least squares solver from Ceres to solve for the multilateration problem.  
+A Matlab script is also provided to generate some sample data to test with.
 
 Trilateration: 3 beacons  
 Multilateration: > 3 beacons  
