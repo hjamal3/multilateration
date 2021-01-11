@@ -18,6 +18,7 @@ Instructions:
 git clone https://github.com/hjamal3/multilateration.git  
 cd multilateration  
 mkdir build  
+cd build  
 cmake ..  
 make  
 ./multilateration  
